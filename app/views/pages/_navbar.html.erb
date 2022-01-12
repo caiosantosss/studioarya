@@ -3,13 +3,16 @@
   <div class="container">
     <%# Image logo %>
     <%= link_to "#", class: "navbar-brand logo-image" do %>
-      <%= image_tag "logostudioarya.png" %>
+      <%= image_tag "logostudioarya.png", height: "50px" %>
     <% end %>
     <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
-      <ul>
+      <ul class="navbar-nav ms-auto navbar-nav-scroll">
+        <li class="nav-item">
+          <%= link_to "Home", "#", class:"nav-link active" %>
+        </li>
       </ul>
     </div>
   </div>
