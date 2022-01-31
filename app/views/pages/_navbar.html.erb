@@ -6,47 +6,46 @@
       <%= image_tag "logostudioarya.png", height: "50px" %>
     <% end %>
     <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon">
-        <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
-          <ul class="navbar-nav ms-auto navbar-nav-scroll">
-            <li class="nav-item">
-              <%= link_to "Home", "#header", class:"nav-link active" %>
-            </li>
-            <li class="nav-item">
-              <%= link_to "Sobre", "#details", class:"nav-link active" %>
-            </li>
-            <li class="nav-item">
-              <%= link_to "Serviços", "#services", class:"nav-link active" %>
-            </li>
-            <li class="nav-item">
-              <%= link_to "Projetos", "#projects", class:"nav-link active" %>
-            </li>
-            <%# keep going with the dropdown %>
-            <li class="nav-item dropdown">
-              <%= image_tag "", class: "dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
-              <%#= "Mais", class: "nav-link dropdown-toggle" %>
-              <%#= link_to "Mais", "#", class:"nav-link dropdown-toggle" %>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li>
-                  <%= link_to "Artigos", "#", class:"dropdown-item" %>
-                </li>
-                <li>
-                  <div class="dropdown-divider"></div>
-                </li>
-                <li>
-                  <%= link_to "Termos e condicoes", "#", class:"dropdown-item" %>
-                </li>
-                <li>
-                  <div class="dropdown-divider"></div>
-                </li>
-                <li>
-                  <%= link_to "Politica de Privacidade", "#", class:"dropdown-item" %>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </span>
+      <span class="navbar-toggler-icon"></span>
+      <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav ms-auto navbar-nav-scroll">
+          <li class="nav-item">
+            <%= link_to "Home", "#header", class:"nav-link active" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "Sobre", "#details", class:"nav-link active" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "Serviços", "#services", class:"nav-link active" %>
+          </li>
+          <li class="nav-item">
+            <%= link_to "Projetos", "#projects", class:"nav-link active" %>
+          </li>
+          <%# keep going with the dropdown %>
+          <li class="nav-item dropdown">
+            <%= image_tag "", class: "dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
+            <%#= "Mais", class: "nav-link dropdown-toggle" %>
+            <%#= link_to "Mais", "#", class:"nav-link dropdown-toggle" %>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li>
+                <%= link_to "Artigos", "#", class:"dropdown-item" %>
+              </li>
+              <li>
+                <div class="dropdown-divider"></div>
+              </li>
+              <li>
+                <%= link_to "Termos e condicoes", "#", class:"dropdown-item" %>
+              </li>
+              <li>
+                <div class="dropdown-divider"></div>
+              </li>
+              <li>
+                <%= link_to "Politica de Privacidade", "#", class:"dropdown-item" %>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
     </button>
   </div>
 </nav>
